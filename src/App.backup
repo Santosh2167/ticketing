@@ -1,0 +1,20 @@
+import React, {Component} from "react";
+import ColourSelector from "./ColourSelector";
+
+
+class App extends Component {
+
+    render() {
+        return(
+            <div>
+                <h1>Welcome to your Painting Pad</h1>
+                <ColourSelector
+                  hex = "#ff04A2"/>
+                <ColourSelector/>
+                <ColourSelector/>
+            </div>
+        )
+    }
+}
+
+export default App;

@@ -1,16 +1,20 @@
 import React, {Component} from "react";
-import ColourSelector from "./ColourSelector";
+import Canvas from "./Canvas";
+
 
 class App extends Component {
-    render(){
 
+    render() {
         return(
             <div>
-                <h1>Welcome to your colour Pad</h1>
-                <ColourSelector
-                hex="#ff0000"
-                />
-                <ColourSelector/>
+                <h1>Welcome to your painting pad</h1>
+                {/* <ColourSelector
+                  hex="#FF0000"/>
+                  <ColourSelector/>
+                  <ColourSelector
+                  hex="#0000FF"/> */}
+
+                  <Canvas/>
             </div>
         )
     }
