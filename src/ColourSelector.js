@@ -1,18 +1,17 @@
 import React,{Component} from "react";
 
 class ColourSelector extends Component{
-    state = {hex: this.props.hex}
-    
-    onInputChange=(event)=>{
-        this.setState({hex: event.target.value});
-    }
-
+   
+   onInputChange=(event)=>{
+       const {onColourSelectorChange} = this.props;
+       onColourSelectorChange(event.target.value);
+   }
     componentDidUpdate() {
-        console.log(this.state.hex)
+        console.log("Component Updated")
     }
     
     render(){
-        const {hex} = this.state;
+        const {hex} = this.props;
 
         return(
             <div>
